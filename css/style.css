@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    background: #F9F9F9;
+    color: #3D4756;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;
+    margin: 80px 0 10px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin: 0;
+}
+
+p { 
+    font-size: 16px;
+    margin: 0;
+    line-height: 1.5;
+}
+.navbar {
+    background: #1BA1BF;
+    z-index: 9;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-nav {
+    margin-left: 80px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.sidenav {
+    height: 100%;
+    width: 220px;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+    left: 0;
+    background: #1BA1BF;
+    box-shadow: 2px 0px 2px rgba(3, 102, 125, 0.25);
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+.sidenav-cont{
+    width: 100%;
+    float: right;
+  }
+  
+  .sidenav a, .dropdown-btn {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    display: block;
+    border: none;
+    border-bottom: 2px solid rgba(224, 243, 247, 0.35);
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .dropdown-container a {
+      padding-left: 20px;
+      font-size: 14px;
+      border: none;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10%;
+  }
+  .sidenav span{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .menu i{
+    font-size: 1.45em;
+    color: white;
+  }
+  
+  img{
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+    padding-right: 10px;
+  }
+  
+  .active {
+    background-color: rgba(95, 38, 255, 0.4);
+    color: white;
+  }
+  
+  .active::after {
+      font-weight: 900;
+      display: inline-block;
+      padding-right: 15px;
+      font-size: 180%;
+      color: #034171;
+  }
+  
+  .dropdown-container {
+    display: none;
+    background-color: rgba(95, 38, 255, 0.4);
+    opacity: 0.7;
+  }
+  
+  .fa-caret-down {
+    float: right;
+    padding-right: 8px;
+  }
+  
+  .sidenav a:hover, .dropdown-btn:hover {
+    background-color: rgba(53, 164, 255, 0.6);
+    opacity: 1;
+  }
+
+  .active:hover{
+    background-color: rgba(53, 164, 255, 0.6);
+    opacity: 1;
+  }
+
+  .dropdown-container a:hover{
+    background-color: rgba(53, 164, 255, 0.6);
+    border-radius: 0;
+    opacity: 1;
+  }
+
+  .info-data-consulta {
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 28px;
+    color: #A1ACBD;
+    margin: 10px 0;
+  }
+
+  .card {
+    background: #FFFFFF;
+    border: 2px solid #1BA1BF;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 2px rgba(3, 102, 125, 0.25);
+    border-radius: 6px;
+    margin: 20px 0;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .table-striped tbody tr:nth-of-type(odd) {
+    background: rgba(102, 194, 216, 0.2);
+  }
+
+  .table td, .table th {
+    border-top: 1px solid rgba(102, 194, 216, 0.5);
+  }
+
+  .table thead th {
+    vertical-align: bottom;
+    border-bottom: 1px solid rgba(102, 194, 216, 0.5);
+  }
