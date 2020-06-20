@@ -224,6 +224,14 @@ img{
   padding: 10px 20px;
 }
 
+thead {
+  background: #fff;
+}
+
+tbody {
+  background: #fff;
+}
+
 .table-striped tbody tr:nth-of-type(odd) {
   background: rgba(33, 150, 243, 0.15);
 }
@@ -283,4 +291,22 @@ img{
   border: 2px solid rgba(33, 150, 243);
   color: rgba(33, 150, 243);
   font-weight: bold;
+}
+
+.select-check {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.text-pagination {
+  text-align: right;
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.pagination-sm .page-link {
+  border: none;
+  color: rgba(33, 150, 243);
+  box-shadow: 1px 1px 1px rgba(33, 150, 243, 0.25);
 }
