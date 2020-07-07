@@ -1,0 +1,220 @@
+<div class="modal" id="novopacienteModal" tabindex="-1" role="dialog" aria-labelledby="historicoModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Novo paciente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div id="accordion"> 
+                <div class="card cardresgistro">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Dados obrigatórios
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body cardbodyresgistro">
+                            <div class="dados-identificacao">
+
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Dados de identificação</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="nome">Nome</label>
+                                                <input type="text" class="form-control" id="nome" placeholder="Nome">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="cpf">CPF</label>
+                                                <input type="text" class="form-control" id="cpf" placeholder="CPF">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="data_nascimento">Data de nascimento</label>
+                                                <input type="text" class="form-control" id="data_nascimento" placeholder="xx/xx/xxxx">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="dados-contatos">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Dados de contatos</label>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="calular">Celular</label>
+                                                <input type="text" class="form-control" id="nome" placeholder="(xx) xxxx-xxxxx">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="celular-2">Celular 2</label>
+                                                <input type="text" class="form-control" id="celular-2" placeholder="(xx) xxxx-xxxxx">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="data_nascimento">Telefone</label>
+                                                <input type="text" class="form-control" id="telefone" placeholder="(xx) xxxx-xxxx">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="email">E-mail</label>
+                                                <input type="text" class="form-control" id="email" placeholder="nome@email.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="form-group">
+                                                <label for="cidade">Cidade</label>
+                                                <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardresgistro">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Dados complementares
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body cardbodyresgistro">
+                            <div class="dados-identificacao">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <label>Dados de identificação</label>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="sexo">Sexo</label>
+                                                    <select class="form-control" id="sexo">
+                                                        <option></option>
+                                                        <option>Feminino</option>
+                                                        <option>Masculino</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="estado_civil">Estado Civil</label>
+                                                    <select class="form-control" id="estado_civil">
+                                                        <option></option>
+                                                        <option>Solteiro</option>
+                                                        <option>Casado</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="profissao">Profissão</label>
+                                                    <input type="text" class="form-control" id="profissao" placeholder="Profissão">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="naturalidade">Naturalidade</label>
+                                                    <input type="text" class="form-control" id="naturalidade" placeholder="Naturalidade">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="nome_mae">Nome da mãe</label>
+                                                    <input type="text" class="form-control" id="nome_mae" placeholder="Nome da mãe">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="form-group">
+                                                    <label for="nome_pai">Nome do pai</label>
+                                                    <input type="text" class="form-control" id="nome_pai" placeholder="Nome do pai">
+                                                </div>
+                                            </div>
+                                        </div>
+                                </form>
+                            </div>
+                            <div class="dados-contatos">
+                                <form>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <label>Dados de contatos</label>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="cep">CEP</label>
+                                                <input type="text" class="form-control" id="cep" placeholder="CEP">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="logradouro">Logradouro</label>
+                                                <input type="text" class="form-control" id="logradouro" placeholder="Logradouro">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="form-group">
+                                                <label for="numero">Número</label>
+                                                <input type="text" class="form-control" id="numero" placeholder="Número">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="form-group">
+                                                <label for="bairro">Bairro</label>
+                                                <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="complemento">Complemento</label>
+                                                <input type="text" class="form-control" id="complemento" placeholder="complemento">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="estado">Estado</label>
+                                                <select class="form-control" id="estado">
+                                                    <option></option>
+                                                    <option></option>
+                                                    <option>SP</option>
+                                                    <option>MG</option>
+                                                    <option>ES</option>
+                                                    <option>Rj</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <div class="form-group">
+                                                <label for="pais">País</label>
+                                                <input type="text" class="form-control" id="pais" placeholder="País">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

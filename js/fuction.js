@@ -8,6 +8,26 @@ $(document).ready(function () {
       $('.collapse.in').toggleClass('in');
       $('a[aria-expanded=true]').attr('aria-expanded', 'false');
   });
+});
 
-  $("#anexoupload").dropzone({});
+
+document.addEventListener('DOMContentLoaded', function() {
+  var calendarEl = document.getElementById('calendar');
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    initialView: 'timeGridDay',
+    themeSystem: 'bootstrap',
+    timeZone: 'America/Sao_Paulo',
+    locale: 'pt-br',
+    showNonCurrentDates:false,
+    fixedWeekCount:false,
+    contentHeight:"auto",
+    handleWindowResize:true,
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'timeGridDay,dayGridWeek,dayGridMonth,listWeek'
+    }
+
+  });
+  calendar.render();
 });

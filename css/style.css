@@ -23,7 +23,7 @@ h1{
 
 h2 {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 18px !important;
   line-height: 28px;
   margin: 0;
 }
@@ -165,6 +165,10 @@ ul ul a {
   top: 0;
   right: 0;
   padding: 40px;
+}
+
+#content-not-sidebar {
+  padding: 40px 0;
 }
 
 #content.active {
@@ -445,6 +449,40 @@ tbody {
   border: 1px solid rgba(27, 161, 191, 0.25);
   border-top: none;
   border-bottom: none;
+}
+.card-body:last-child {
+  border-bottom: 1px solid rgba(27, 161, 191, 0.25);
+}
+
+.dados-identificacao {
+  border-bottom: 1px solid rgba(27, 161, 191, 0.25);
+  margin-bottom: 20px;
+}
+.dados-identificacao label, .dados-contatos label {
+  margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------
+      CALENDAR
+----------------------------------------------------- */
+#calendar {
+  margin: 50px 0 0;
+}
+
+.fc-view-harness {
+  box-shadow: 0px 1px 1px rgba(27, 161, 191, 0.25);
+}
+
+button.fc-prev-button {
+  margin-left: 0;
+}
+
+.fc .fc-daygrid-day.fc-day-today {
+  background: rgba(27, 161, 191, 0.15);
+}
+
+.fc .fc-scrollgrid-section, .fc .fc-scrollgrid-section>td {
+  border: none !important;
 }
 /* ---------------------------------------------------
       RESPONSIVO
