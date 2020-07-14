@@ -439,7 +439,6 @@ tbody {
 }
 
 .cardresgistro button{
-  width: 100%;
   text-align: left;
 }
 
@@ -484,10 +483,18 @@ button.fc-prev-button {
 .fc .fc-scrollgrid-section, .fc .fc-scrollgrid-section>td {
   border: none !important;
 }
+
+.btn-confirmar-consulta {
+  margin-right: 5px;
+}
+
+#mini-calendar {
+  padding-top: 75px;
+  padding: 75px 10px 0;
+}
 /* ---------------------------------------------------
       RESPONSIVO
 ----------------------------------------------------- */
-
 @media(max-width: 1199px) {
   .atalho-consultas-container {
     display: flex;

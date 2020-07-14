@@ -10,6 +10,13 @@ $(document).ready(function () {
   });
 });
 
+$(function () {
+  $('#mini-calendar').datetimepicker({
+      inline: true,
+      sideBySide: false,
+      locale: 'pt-br'
+  });
+});
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');

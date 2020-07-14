@@ -1,0 +1,139 @@
+<div class="modal" id="novaconsultaModal" tabindex="-1" role="dialog" aria-labelledby="novaconsultaModal" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Novo paciente</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div id="accordion"> 
+                <div class="card cardresgistro">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Dados do paciente
+                            </button>
+                        </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body cardbodyresgistro">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="nome">Nome do paciente</label>
+                                            <input type="text" class="form-control" id="nome" placeholder="Nome">
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="d-flex justify-content-end">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">Novo paciente</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="card cardresgistro">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Dados da consulta
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body cardbodyresgistro">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div class="form-group">
+                                        <label for="profissional">Nome profissional</label>
+                                        <input type="text" class="form-control" id="profissional" placeholder="Nome profissional">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="agendamento">Tipo de agendamento</label>
+                                        <select class="form-control" id="agendamento">
+                                            <option></option>
+                                            <option>Consulta</option>
+                                            <option>Retorno</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="convenio">Convênio</label>
+                                        <input type="text" class="form-control" id="convenio" placeholder="Convênio">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="plano">Plano</label>
+                                        <input type="text" class="form-control" id="plano" placeholder="Plano">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="numero">Número</label>
+                                        <input type="text" class="form-control" id="numero" placeholder="Número">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="validade">Validade</label>
+                                        <input type="text" class="form-control" id="validade" placeholder="Validade">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="data">Data ínicio</label>
+                                        <input type="text" class="form-control" id="data" placeholder="Data">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="hora">Hora ínicio</label>
+                                        <input type="text" class="form-control" id="hora" placeholder="Hora">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="duracao">Duração</label>
+                                        <input type="text" class="form-control" id="duracao" placeholder="Duração">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="duracao">Teleconsulta?</label>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Sim</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">Não</label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Observação</label>
+                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    </div>  
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row justify-content-end">
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
