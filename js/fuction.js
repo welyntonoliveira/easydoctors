@@ -14,7 +14,6 @@ $(function () {
   $('#mini-calendar').datetimepicker({
       inline: true,
       sideBySide: false,
-      locale: 'pt-br'
   });
 });
 

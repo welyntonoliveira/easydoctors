@@ -39,10 +39,7 @@ p, label {
     font-size: 16px;
     margin: 0;
     line-height: 1.5;
-}
-
-label {
-  font-weight: bold;
+    font-weight: 400;
 }
 
 [type=button], [type=reset], 
@@ -345,6 +342,10 @@ tbody {
   margin-left: 20px;
 }
 
+.btn-modal-action {
+  margin-top: 10px;
+}
+
 .btn-outline-secondary {
   border: 2px solid rgba(27, 161, 191);
   color: rgba(27, 161, 191);
@@ -492,6 +493,23 @@ button.fc-prev-button {
   padding-top: 75px;
   padding: 75px 10px 0;
 }
+
+.btn-novo-paciente {
+  margin-top: 25px;
+}
+
+.side-agenda-select {
+  padding: 0px 10px;
+  margin: 10px 0;
+}
+
+.side-agenda-select .side-titulo-select {
+  margin: 5px 0 0;
+}
+
+.side-agenda-select .form-check {
+  margin: 5px 0 0;
+}
 /* ---------------------------------------------------
       RESPONSIVO
 ----------------------------------------------------- */
@@ -599,5 +617,24 @@ button.fc-prev-button {
 
   .modal-container-card {
     margin-left: 0px;
+  }
+
+  .fc .fc-toolbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column;
+  }
+
+  .fc-toolbar-chunk {
+    margin: 5px 0;
+  }
+
+  button.fc-timeGridDay-button {
+    margin: 0;
+  }
+
+  .btn-novo-paciente {
+    margin-top: 0;
   }
 }
