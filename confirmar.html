@@ -4,42 +4,52 @@
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Confirmar consultas</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
+            <i class="fas fa-times"></i>
           </button>
         </div>
         <div class="modal-body">
             <p>Paciente agendado para o dia 06/06/2020</p>
             <p>Não confirmado, sem termo assinado</p>
-
             <form>
                 <div class="form-group">
                     <p>Enviar termo?</p>
-                    <input type="radio" id="radio3" name="radioDisabled" id="customRadioDisabled" class="custom-control-input" disabled>
-                    <label class="custom-control-label" for="customRadioDisabled">Enviar</label>
-                    <label class="custom-control-label" for="customRadioDisabled">Não enviar</label>
+                    <div class="form-check">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Enviar</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Não Enviar</label>
+                        </div>
+                    </div>
                 </div>
             </form>
-
             <div class="form-container">
                 <div class="card">
                     <div class="card-body">
                         <p>Enviar para esse número:</p>
+                        <p>(12) 99493-9943</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <p>Enviar para esse número:</p>
+                        <p>(12) 99493-9943</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="card-body">
                         <label for="exampleInputOutro1">Outro número:</label>
                         <input type="textarea" class="form-control" id="exampleInputOutro1" aria-describedby="OutroHelp" placeholder="Outro número">
-                        <button type="button" class="btn btn-primary btn-sm">Pedir confirmação</button>
                     </div>
                 </div>
-            </div>
-
+            </div> 
+            <div class="container">
+                <div class="row justify-content-end">
+                    <button type="button" class="btn btn-primary">Pedir confirmação</button>
+                </div>
+            </div>           
         </div>
     </div>
 </div>

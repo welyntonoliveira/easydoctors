@@ -352,6 +352,23 @@ tbody {
   font-weight: bold;
 }
 
+.btn-outline-secondary:hover,
+.btn-outline-secondary:active,
+.btn-outline-secondary:focus {
+  border: 2px solid rgba(27, 161, 191);
+  background: rgba(27, 161, 191);
+  color: #fff;
+  box-shadow: 1px 1px 1px rgba(27, 161, 191, 0.25) !important;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled).active, 
+.btn-outline-secondary:not(:disabled):not(.disabled):active, 
+.show>.btn-outline-secondary.dropdown-toggle {
+  border: 2px solid rgba(27, 161, 191);
+  background: rgba(27, 161, 191);
+  color: #fff;
+}
+
 .select-check {
   display: inline-block;
   margin-right: 20px;
@@ -400,6 +417,18 @@ tbody {
   margin-left: -5px;
   margin-top: 10px;
   flex-wrap: wrap;
+}
+
+.card-header {
+  background: rgb(27, 161, 191);
+}
+
+.card-header .btn-link.collapsed,
+.card-header .btn-link,
+.card-header .btn-link.focus {
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
 }
 
 .modal-container-card .card {
@@ -492,10 +521,6 @@ button.fc-prev-button {
 #mini-calendar {
   padding-top: 75px;
   padding: 75px 10px 0;
-}
-
-.btn-novo-paciente {
-  margin-top: 25px;
 }
 
 .side-agenda-select {
