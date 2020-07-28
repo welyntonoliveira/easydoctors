@@ -47,6 +47,10 @@ p, label {
   -webkit-appearance: none;
 }
 
+textarea {
+  resize: none;
+}
+
 .btn-link {
   color: #1ba1bf;
 }
@@ -215,6 +219,150 @@ ul ul a {
 .btn-container-termo .btn a:hover{
   text-decoration: none;
 }
+
+/* ---------------------------------------------------
+  TELECONSULTA
+----------------------------------------------------- */
+
+.video_teleconsulta {
+  margin: 40px 0;
+  background-color: #000;
+  position: relative;
+  width: 100%;
+  padding-top: calc((9 / 16) * 100%);
+}
+
+.video_teleconsulta_minha_camera {
+  background-color: #fff;
+  position: absolute;
+  width: 300px;
+  padding-top: calc((9 / 16) * 300px);
+  bottom: 10px;
+  right: 10px;
+}
+
+.container_opcao_teleconsulta {
+  padding: 0 25px;
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.container_opcao_teleconsulta .btn {
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  border-radius: 50%;
+  padding: 0;
+}
+
+.container_opcao_teleconsulta label {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.img-chat {
+  right: 30px;
+  width: 50%;
+  top: 60%;
+}
+
+.container-chat {
+  position: relative;
+  width: 100%;
+  background-color: #ffffff;
+  height: 500px;
+  margin: 20px 0 40px;
+  z-index: 9;
+  border: 1px solid rgba(27, 161, 191, 0.25);
+  box-shadow: 0px 1px 1px rgba(27, 161, 191, 0.25);
+  padding: 20px;
+}
+
+.container-chat-mensagem {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  left: 0;
+  padding: 0 20px;
+}
+
+.container-chat-mensagem textarea {
+  border: 1px solid rgba(27, 161, 191, 0.25);
+  box-shadow: 0px 1px 1px rgba(27, 161, 191, 0.25);
+}
+
+.container-chat-mensagem .btn {
+  margin-top: 10px;
+}
+
+.container-mensagem {
+  position: absolute;
+  width: 100%;
+  height: 310px;
+  top: 10px;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0 20px;
+}
+
+.container-mensagem-paciente {
+  padding: 10px;
+  border-radius: 6px;
+  width: 50%;
+  border: 1px solid rgba(27, 161, 191, 0.25);
+  box-shadow: 0px 1px 1px rgba(27, 161, 191, 0.25);
+  margin: 5px 0;
+}
+
+.container-mensagem-medico {
+  padding: 10px;
+  border-radius: 6px;
+  width: 50%;
+  float: right;
+  border: 1px solid rgba(27, 161, 191, 0.25);
+  box-shadow: 0px 1px 1px rgba(27, 161, 191, 0.25);
+  background: rgba(27, 161, 191, 0.15);
+  margin: 5px 0;
+}
+
+.calendar {
+  position: relative;
+  width: 100px;
+
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(27, 161, 191, 0.25);
+  box-shadow: 0px 1px 1px rgba(27, 161, 191, 0.25);
+}
+.calendar #monthName {
+  position: relative;
+  padding: 5px 10px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: capitalize;
+  background-color: rgba(27, 161, 191);
+}
+.calendar #dayName {
+  font-size: 16px;
+  font-weight: 400;
+  color: #999;
+  text-transform: capitalize;
+}
+.calendar #dayNumber {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1em;
+  color: #333;
+}
+.calendar #year {
+  font-size: 16px;
+  font-weight: 500;
+  color: #999;
+}
 /* ---------------------------------------------------
   MEDIAQUERIES
 ----------------------------------------------------- */
@@ -238,6 +386,12 @@ ul ul a {
     position: absolute;
     top: 20%;
     transform: translateY(0%);
+  }
+
+  .img-chat {
+    right: 30px;
+    width: 50%;
+    top: 70%;
   }
 }
 
@@ -667,6 +821,10 @@ button.fc-prev-button {
     margin-top: 130px;
   }
 
+  .container_h1 {
+    margin-top: 80px !important;
+  }
+
   .atalho-consultas-container {
     display: flex;
     flex-flow: column;
@@ -678,7 +836,7 @@ button.fc-prev-button {
 
   a.navbar-brand {
     width: 80%;
-    margin-right: 20px;
+    margin-right: 0px;
     padding: 10px 0 0;
   }
 
@@ -728,5 +886,61 @@ button.fc-prev-button {
 
   .infos-confirmacao h1 {
     margin-top: 80px !important;
+  }
+
+  .opcao_teleconsulta {
+    flex-direction: column;
+  }
+
+  .container_opcao_teleconsulta {
+    display: flex;
+    padding: 0;
+  }
+
+  .container_opcao_teleconsulta .btn {
+    margin: 0 10px 0 0;
+  }
+
+  .container_opcao_teleconsulta label {
+    margin: 10px 0;
+  }
+  
+  .video_teleconsulta_minha_camera {
+    width: 100px;
+    padding-top: calc((9 / 16) * 100px);
+  }
+
+  .container-chat {
+    height: 690px;
+  }
+
+  .container-mensagem {
+    height: 500px;
+  }
+
+  .container-mensagem-paciente {
+    width: 100%;
+  }
+
+  .container-mensagem-medico {
+    width: 100%;
+  }
+
+  .img-chat {
+    left: 0;
+    padding: 0 10px;
+    width: 100%;
+    top: 0;
+    margin: 0 0;
+  }
+
+  .calendar {
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .container-agenda {
+    margin: 0 auto;
+    text-align: center;
   }
 }
