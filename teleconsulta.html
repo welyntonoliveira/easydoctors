@@ -136,13 +136,35 @@
                                             </div>
                                         </div>
                                         <div class="container_opcao_teleconsulta">
-                                            <button class="btn btn-outline-secondary"><i class="fas fa-comments"></i></button>
+                                            <button class="btn btn-outline-secondary" id="teleconsulta-chat"><i class="fas fa-comments"></i></button>
                                             <div>
                                                 <label>Chat</label>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                        </article>
+
+                        <article class="teleconsulta-chat">
+                            <div class="container-teleconsulta-chat">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <i class="fas fa-times"></i>
+                                </button>
+                                <div class="container-mensagem">
+                                    <div class="container-mensagem-paciente">
+                                        <p>Eu estou no aguardo!</p>
+                                    </div>
+                                    <div class="container-mensagem-medico">
+                                        <p>Ok estou finalizando.</p>
+                                    </div>
+                                </div>
+                                <div class="container-chat-mensagem">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                                    <div class="d-flex justify-content-end">
+                                        <button class="btn btn-primary">Enviar</button>
+                                    </div>
+                                </div>   
                             </div>
                         </article>
                     </div>
@@ -189,6 +211,14 @@
             $.get('info-convenio.html',function(response){ 
                 $('#modais').append(response);
             }); 
+
+            $('#teleconsulta-chat').on('click', function () {
+                $('.teleconsulta-chat').toggleClass('active-chat');
+            });
+
+            $('.teleconsulta-chat .close').on('click', function () {
+                $( "#teleconsulta-chat" ).trigger( "click" );
+            });
         });
     </script>
 

@@ -363,6 +363,31 @@ ul ul a {
   font-weight: 500;
   color: #999;
 }
+
+.teleconsulta-chat {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 450px;
+  right: -450px;
+  background: #fff;
+  z-index: 999;
+  border-left: 1px solid rgba(27, 161, 191, 0.25);
+  transition: all 0.3s;
+}
+
+.active-chat {
+  right: 0;
+}
+ 
+.teleconsulta-chat .close {
+  margin: 20px 20px;
+}
+
+.teleconsulta-chat .container-mensagem {
+  height: 65%;
+  margin-top: 45px;
+}
 /* ---------------------------------------------------
   MEDIAQUERIES
 ----------------------------------------------------- */
@@ -942,5 +967,9 @@ button.fc-prev-button {
   .container-agenda {
     margin: 0 auto;
     text-align: center;
+  }
+
+  .teleconsulta-chat {
+    width: 100%;
   }
 }
