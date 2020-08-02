@@ -51,6 +51,12 @@ textarea {
   resize: none;
 }
 
+h2#timer {
+  text-align: center;
+  font-size: 24px !important;
+  margin: 10px 0 0;
+}
+
 .btn-link {
   color: #1ba1bf;
 }
@@ -698,6 +704,7 @@ tbody {
 .cardresgistro {
   margin: 0;
   -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 .cardresgistro button{
@@ -839,6 +846,7 @@ button.fc-prev-button {
   .modal-container-card .card {
     flex-basis: 47%;
   }
+  
 }
 
 @media (max-width: 767px) {
@@ -971,5 +979,14 @@ button.fc-prev-button {
 
   .teleconsulta-chat {
     width: 100%;
+  }
+
+  .video_teleconsulta {
+    padding-top: 130%;
+    margin: 40px 0 40px;
+  }
+
+  .teleconsulta-h1 {
+    display: none;
   }
 }

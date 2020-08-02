@@ -46,8 +46,15 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="btn-container-confirmacao d-flex justify-content-center">
-                                <a href="sala-espera-chat.html" class="btn btn-primary">Vou aguardar o médico</a>
+                            <div class="container-time">
+                                <p>O médico foi informado que você está aguardando.</p>
+                                <h2 id="timer"></h2>
+                                <div  class="btn-container-confirmacao d-flex justify-content-center">
+                                    <a id="novo-aguardar" href="#" class="btn btn-primary">Avisar o médico novamente</a>
+                                </div>
+                            </div>
+                            <div id="container-aguardar" class="btn-container-confirmacao d-flex justify-content-center">
+                                <a href="#" class="btn btn-primary" id="aguardar">Vou aguardar o médico</a>
                             </div>
                         </article>
                         <article class="instrucao-confirmacao">
@@ -65,7 +72,7 @@
                         </article>
                     </div>
                     <div class="col-lg-6 col-sm-4">
-                        <img class="img-fluid img-confirmacao" src="img/undraw_medicine_b1ol.svg">
+                        <img class="img-fluid img-confirmacao" src="img/sala-espera.svg">
                     </div>
                 </div>
             </div>
@@ -78,7 +85,63 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/dropzone.js?1422981258"></script>
-    <script src="js/fuction.js"></script>
     <script src="https://kit.fontawesome.com/d3e9945aae.js" crossorigin="anonymous"></script>
+    <script>
+        var tempo = 300;
+        function countdown() {
+            // Se o tempo não for zerado
+            if ((tempo - 1) >= -1) {
+                // Pega a parte inteira dos minutos
+                var min = parseInt(tempo / 60);
+                // Calcula os segundos restantes
+                var seg = tempo % 60;
+                // Formata o número menor que dez, ex: 08, 07, ...
+                if (min < 10) {
+                    min = "0" + min;
+                    min = min.substr(0, 2);
+                }
+
+                if (seg <= 9) {
+                    seg = "0" + seg;
+                }
+
+                // Cria a variável para formatar no estilo hora/cronômetro
+                horaImprimivel = '00:' + min + ':' + seg;
+                //JQuery pra setar o valor
+                $("#timer").html(horaImprimivel);
+
+                // Define que a função será executada novamente em 1000ms = 1 segundo
+                setTimeout('countdown()', 1000);
+
+                // diminui o tempo
+                tempo--;
+
+                // Quando o contador chegar a zero faz esta ação
+            } else {
+                $('#novo-aguardar').show();
+            }
+        }
+
+        $(document).ready(function(e) {
+            $(".container-time").hide();
+            $("#novo-aguardar").hide();
+            $("#container-aguardar").hide();
+
+            $('#aguardar').on('click', function (e) {
+                e.preventDefault();
+                $(".container-time").show();
+                $(".infos-confirmacao .card").hide();
+                $(this).hide();
+                countdown();
+            });
+
+            $('#novo-aguardar').on('click', function (e) {
+                e.preventDefault();
+                tempo = 300;
+                $(this).hide();
+                countdown();
+            });
+        });
+    </script>
   </body>
 </html>
